@@ -39,6 +39,10 @@ footer {
 	bottom: 0;
 }
 
+#hireButton.btn-info:hover{
+	color: blue;
+}
+
 .container {
     flex: 1; /* This makes the container take up the remaining space */
 }
@@ -53,7 +57,6 @@ footer {
 
 .fa-brands:hover, .fa-solid:hover{
 	color: blue;
-	box-shadow: 10px 10px;
 }
 
 #landing{
