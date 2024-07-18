@@ -7,9 +7,19 @@
 
 /* Asterisk means universal. All elements will be targeted. */
 
+.card-body {
+            max-height: 200px; /* Adjust the maximum height as needed */
+            overflow: auto; /* Add scrollbars when content exceeds the max height */
+            font-weight: bold;
+        }
+
 *{
 	font-family: "Roboto", sans-serif;
 	color: white;
+}
+
+.d-flex{
+	margin-right: 50px;
 }
 
 h1, p{
@@ -47,7 +57,7 @@ footer {
     flex: 1; /* This makes the container take up the remaining space */
 }
 
-.fa-brands, .fa-solid{
+.fa-brands, .fa-solid, .fa-regular{
 	font-size: 30px;
 	color: white;
 
@@ -65,4 +75,13 @@ footer {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+}
+
+.card-title{
+    font-weight: bold;
+  
+}
+
+.card-title, .card-text {
+    color: black;
 }
