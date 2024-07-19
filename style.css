@@ -28,8 +28,8 @@ h1, p{
 
 /* use # for ID selector */
 #profile{
-	height: 250px;
-	width: 250px;
+	height: 350px;
+	width: 350px;
 	object-fit: cover;
 	border-radius: 50%;
 }
@@ -56,6 +56,8 @@ footer {
 .container {
     flex: 1; /* This makes the container take up the remaining space */
 }
+
+
 
 .fa-brands, .fa-solid, .fa-regular{
 	font-size: 30px;
