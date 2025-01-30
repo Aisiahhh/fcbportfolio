@@ -1,132 +1,238 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <!-- Font Awesome Kit -->
+        <script src="https://kit.fontawesome.com/f31c9f7a17.js" crossorigin="anonymous"></script>
 
-		<!-- font awesome kit -->
-		<script src="https://kit.fontawesome.com/f31c9f7a17.js" crossorigin="anonymous"></script>
+        <!-- Meta Tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aisiah | Web Developer Portfolio</title>
 
-		<!-- meta tags for additional option/s to our website -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
 
-		<!-- title tag - it sets the title of the tab -->
-		<title> Aisiah | Web Developer Portfolio </title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-		<!-- google font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic	.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+         <style>
+            body {
+                font-family: 'Roboto', sans-serif;
+                background-color: #f4f4f9;
+                color: #333;
+                padding-top: 50px;
+            }
 
-		<!-- Bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
- <link rel="stylesheet" type="text/css" href="./aboutme.css">    
-</head>
-<body>
+            .navbar {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7); /* Slight transparency */
+                transition: background-color 0.3s ease, opacity 0.3s ease;
+                z-index: 1000; /* Ensures it stays above content */
+                opacity: 0.8;
+            }
 
-    <nav class="navbar navbar-expand-lg" style="background-color: rgba(255, 255, 255, 0.1);">
-        <div class="container-fluid">
-            <div class="d-flex justify-content-start">
+            .navbar:hover,
+            .navbar:focus-within {
+                opacity: 1; /* Fully visible when hovered or clicked */
+            }
+
+
+            .navbar a {
+                color: #fff;
+                font-size: 18px;
+                margin-right: 15px;
+            }
+
+            .navbar-brand h2 {
+                color: #fff;
+            }
+
+            #landing {
+                margin-top: 100px;
+                text-align: center;
+            }
+
+            #landing h1 {
+                font-size: 3.5rem;
+                font-weight: bold;
+                color: #333;
+            }
+
+            #landing h2 {
+                font-size: 2.5rem;
+                font-weight: 600;
+                color: #555;
+            }
+
+            #landing p {
+                font-size: 1.2rem;
+                color: #777;
+            }
+
+            .container {
+                padding-top: 150px; /* Adjust this value as needed */
+            }
+
+
+            #profile {
+                border-radius: 50%;
+                width: 250px;
+                height: 250px;
+                object-fit: cover;
+                margin-top: 20px;
+                border: 5px solid #fff;
+            }
+
+            #hireButton a {
+                background-color: #28a745;
+                color: white;
+                border: none;
+                font-size: 1.2rem;
+                padding: 10px 30px;
+                border-radius: 25px;
+                margin-top: 20px;
+                display: inline-block;
+                text-decoration: none;
+                transition: background-color 0.3s ease;
+            }
+
+            #hireButton a:hover {
+                background-color: #218838;
+            }
+
+            .navbar .nav-item.dropdown:hover .dropdown-menu {
+                display: block;
+            }
+
+            .dropdown-menu {
+                background-color: #333;
+                border-radius: 5px;
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+
+            .dropdown-menu a {
+                color: white;
+            }
+
+            .dropdown-menu a:hover {
+                background-color: #007bff;
+            }
+
+            footer {
+                bottom: 0;
+                width: 100%;
+                background-color: rgba(0, 0, 0, 0.7);
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            footer a {
+                color: white;
+                font-size: 1.5rem;
+                margin: 0 15px;
+                text-decoration: none;
+            }
+
+            footer a:hover {
+                color: #007bff;
+            }
+
+            @media (max-width: 768px) {
+                #landing h1 {
+                    font-size: 2.5rem;
+                }
+
+                #landing h2 {
+                    font-size: 2rem;
+                }
+
+                #landing p {
+                    font-size: 1rem;
+                }
+
+                #profile {
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        </style>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="./index.html">
                     <h2>Home</h2>
                 </a>
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item mt-1">
-                        <a class="nav-link" href="./aboutme.html">
-                            <h4> About Me </h4>
-                        </a>
-                    </li>
-                    <li class="nav-item mt-1">
-                        <a class="nav-link" href="./works.html">
-                            <h4>
-                                Accomplishments
-                            </h4>
-                        </a>
-                    </li>
-                </ul>	
-            </div>
-            <a href= "mailto:aisantiago@gbox.adnu.edu.ph" id = "hireButton"> 
-                <button class="btn-info btn-lg"> 
-                        Hire me! 
-                </button>
-            </a>
-        </div>
-    </nav>
 
-    <div class="py-4">
-        <div class="container mb-4">
-            <!-- Card 1 -->
-            <div class="card shadow-sm mb-4">
-                <div class="card-body">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="./aboutme.html">About Me</a></li>
+                        <li><a class="dropdown-item" href="./works.html">Accomplishments</a></li>
+                        <li><a class="dropdown-item" href="mailto:aisiah.santiago0202@gmail.com">Hire me!</a></li>
+                    </ul>
+            </div>
+        </nav>
+
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
                     <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-success text-white text-center">
-                            <h3 class="mb-0">Background</h3>
-                        </div>
+                        <div class="card-header">Background</div>
                         <div class="card-body">
-                            <p class="mb-0" style="color: black;">
-                                I am a graduate of Ateneo de Naga University with a Bachelor of Science in Information Technology, where I received an Honorable Mention. My expertise spans various technologies and frameworks, including PHP and Dart within the Flutter framework, Kotlin, HTML, CSS, and Bootstrap. My academic background and practical experience have equipped me with a solid foundation in web and mobile development.
+                            <p style="text-align: justify;">
+                               I hold a Bachelor of Science in Information Technology from Ateneo de Naga University, graduating with an Honorable Mention. I have experience in both web and app development, with a strong focus on using Flutter for building cross-platform mobile applications and responsive websites. I am proficient in Dart (Flutter), HTML, CSS, JavaScript, and PHP, and have hands-on experience with back-end technologies such as Node.js, MySQL, Firebase, and MongoDB.
                             </p>        
                         </div>
                     </div>
-                    <!-- Card 2 -->
+
+                    <!-- Mission Card -->
                     <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-success text-white text-center">
-                            <h3 class="mb-0">Mission</h3>
-                        </div>
+                        <div class="card-header">Mission</div>
                         <div class="card-body">
-                            <p class="mb-0" style="color: black;">
-                                To leverage my expertise in web and mobile development to create innovative, user-centric solutions that drive growth and efficiency. I am dedicated to continuously learning and applying cutting-edge technologies, with a focus on delivering high-quality, impactful projects that meet the evolving needs of users and businesses. My goal is to contribute to dynamic and collaborative environments where my skills in PHP, Dart, Kotlin, HTML, CSS, and Bootstrap can make a meaningful difference.
+                            <p style="text-align: justify;">
+                                My mission is to leverage my expertise in web and mobile development to create innovative, user-centric solutions that drive business growth and efficiency. I am committed to continuous learning and staying up-to-date with cutting-edge technologies. My goal is to contribute to dynamic teams where I can apply my skills in Flutter (Dart), JavaScript, PHP, and modern front-end frameworks to make a meaningful impact.
                             </p> 
                         </div>
                     </div>
-                    <!-- Card 3 -->
+
+                    <!-- Services Card -->
                     <div class="card shadow-sm mb-4">
-                        <div class="card-header bg-success text-white text-center">
-                            <h1 class="mb-0">Services I can Offered</h1>
-                        </div>
+                        <div class="card-header">Services I Offer</div>
                         <div class="card-body">
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Web Development</li>
-                                <li class="list-group-item">Mobile App Development</li>
-                                <li class="list-group-item">UI/UX Design</li>
-                                <li class="list-group-item">Digital Marketing</li>
-                                <li class="list-group-item">Cloud Services</li>
-                                <li class="list-group-item">E-commerce Solutions</li>
-                                <li class="list-group-item">Database Management</li>
-                                <li class="list-group-item">Consulting Services</li>
-                                <li class="list-group-item">Technical Supports</li>
+                                <li class="list-group-item">✅ Web Development</li>
+                                <li class="list-group-item">✅ Mobile App Development</li>
+                                <li class="list-group-item">✅ E-commerce Solutions</li>
+                                <li class="list-group-item">✅ Database Management</li>
+                                <li class="list-group-item">✅ Consulting Services</li>
+                                <li class="list-group-item">✅ Technical Support</li>
+                                <li class="list-group-item">✅ API integration</li>
+                                <li class="list-group-item">✅ Backend Support</li>
+                                <li class="list-group-item">✅ Restful APIs</li>
                             </ul>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
 
-    <footer>
-        <!-- Website -->
-        <a href="https://aisiahhh.github.io/fcbportfolio/" target="blank"> 
-            <i class="fa-solid fa-globe"></i>
-        </a>
+        <footer>
+            <a href="https://aisiahhh.github.io/fcbportfolio/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+            <a href="https://www.facebook.com/aisiah.santiago" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/aisiah-b-santiago-788a6530a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Aisiahhh" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </footer>
 
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/aisiah.santiago" target="blank"> 
-            <i class="fa-brands fa-facebook"></i>
-        </a>
-
-        <!-- Twitter -->
-        <a href="https://www.linkedin.com/in/aisiah-b-santiago-788a6530a/" target="blank"> 
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-
-        <a href="https://github.com/Aisiahhh" target="blank">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        
-    </footer>
-
-
-    <!-- Add your JavaScript here if needed -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
-</html>
+    </body>
+    </html>

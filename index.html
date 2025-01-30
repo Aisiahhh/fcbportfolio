@@ -1,116 +1,227 @@
-<!-- !DOCTYPE html - tells or dictate the browser that the file type is html -->
-
 <!DOCTYPE html>
+<html lang="en">
 
-<!-- html tag - contains all the html elements in our browser -->
-<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aisiah | Web Developer Portfolio</title>
 
-	<!-- head tag contains the properties or configuration of our website. Most of them are not visible to the website itself -->
-	<head>
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/f31c9f7a17.js" crossorigin="anonymous"></script>
 
-		<!-- font awesome kit -->
-		<script src="https://kit.fontawesome.com/f31c9f7a17.js" crossorigin="anonymous"></script>
+    <!-- Google Fonts and Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
 
-		<!-- meta tags for additional option/s to our website -->
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+<body>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light" style="border-bottom: 2px solid #000;">
 
-		<!-- title tag - it sets the title of the tab -->
-		<title> Aisiah | Web Developer Portfolio </title>
-
-		<!-- google font -->
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic	.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
-
-		<!-- Bootstrap -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-		<link rel="stylesheet" type="text/css" href="./style.css">
-
-	</head>
-
-	<!-- body - it contains the element that will be shown on our page -->
-	<body>
-		<nav class="navbar navbar-expand-lg" style="background-color: rgba(255, 255, 255, 0.1);">
-		    <div class="container-fluid">
-		        <div class="d-flex justify-content-start">
-		            <a class="navbar-brand" href="./index.html">
-		                <h2> Home </h2>
-		            </a>
-		            <ul class="navbar-nav me-auto">
-		                <li class="nav-item mt-1">
-		                    <a class="nav-link" href="./aboutme.html">
-		                    	<h4> About Me </h4>
-		                    </a>
-		                </li>
-		                <li class="nav-item mt-1">
-		                    <a class="nav-link" href="./works.html">
-		                    	<h4>
-		                    		Accomplishments
-		                    	</h4>
-		                    </a>
-		                </li>
-		            </ul>	
-		        </div>
-		        <a href= "mailto:aisantiago@gbox.adnu.edu.ph" id = "hireButton"> 
-		        	<button class="btn-info btn-lg"> 
-		        			Hire me! 
-		        	</button>
-		        </a>
-		    </div>
-		</nav>
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav mx-auto"> <!-- Center the links on all screen sizes -->
+                <a class="nav-link" href="#landing">Home</a>
+                <a class="nav-link" href="#applications">Projects</a>
+                <a class="nav-link" href="#aboutme">About Me</a>
+                <a class="nav-link" href="mailto:aisiah.santiago0202@gmail.com">Hire me!</a>
+            </div>
+        </div>
+    </div>
+</nav>
 
 
 
-		<!-- div is used to create a wrapper or container for layouts -->
-		<!-- class is an html attribute -->
-		<div class = "container-fluid">
+    <section class="full-page-section section-hidden" id="landing">
+	    <div class="container-fluid" id="home">
+	        <section>
+	            <h1>Full Stack Web Developer</h1>
+	            <h2>Aisiah Santiago</h2>
+	            <p>Hi! I am looking for a Mobile and Web Developer position</p>
+	            <img src="./images/toga.jpg" id="profile" class="img-fluid" alt="Profile Picture">
+	        </section>
+	    </div>
+	</section>
 
-			<!-- section is the same with the div tag but sections tag is semantic-->
-			<section id = "landing" class="text-center mt-5">
-				<h1> Full Stack Web Developer </h1>
-				<!-- h1 - headings tag - it is used to create headings or title in our page -->
-				<h2> Aisiah Santiago </h2>
+    <section class="full-page-section section-hidden" id="applications">
+    <div class="container section-hidden" id="applications">
+		<section class="full-page-section" id="applications">
+		    <h1 class="text-center mb-4">My Projects</h1>
+		    <p class="text-center mb-5">These are my works using different technologies.</p>
+		</section>
 
-				<!-- p - tag is used to create paragraph -->
+        <div class="container mt-5">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/snakegame.png" class="card-img-top img-fluid" alt="Snake Game">
+                        <div class="card-body">
+                            <h5 class="card-title">Snake Game</h5>
+                            <p class="card-text">A simple snake game using JavaScript, HTML, CSS, Bootstrap, and PHP.</p>
+                            <a href="https://aisiahhh.github.io/Snake_Game/" target="_blank" class="btn btn-primary">Go to Game</a>
+                        </div>
+                    </div>
+                </div>
 
-				<p>
-					Hi! I am looking for a Jr. Web Developer position
-				</p>
-			
-				<!-- img tag - it is used to add image in our page -->
-				<!-- src attribute - soruce, wherein it will tell us which image to use in page -->
-				<img src="./images/toga.jpg" id = "profile" class="img-fluid">
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/e-alert.png" class="card-img-top img-fluid" alt="E-Alert">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Alert</h5>
+                            <p class="card-text">Capstone Project. Built with Dart, APIs, Flutter, and Firebase.</p>
+                            <a href="https://e-alert-7510c.web.app/" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
 
-			</section>
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/mobile.jpg" class="card-img-top img-fluid" alt="E-Alert Mobile">
+                        <div class="card-body">
+                            <h5 class="card-title">E-Alert Mobile</h5>
+                            <p class="card-text">A mobile app for E-Alert, using APIs, Kotlin, and Firebase.</p>
+                            <a href="https://drive.google.com/drive/folders/1Byc3PRu0NoXv6yewPSbxWJ1JbiUWCB_F" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		</div>
+            <div class="row mt-4">
+                <!-- Card 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/3gx.png" class="card-img-top img-fluid" alt="Internship Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Internship Project</h5>
+                            <p class="card-text">A POS mobile application using Dart, Flutter, PHP, and MySQL.</p>
+                            <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
 
-		<!-- Footer -  -->
-		<footer>
-			<!-- Website -->
-			<a href="https://aisiahhh.github.io/fcbportfolio/" target="blank"> 
-				<i class="fa-solid fa-globe"></i>
-			</a>
+                <!-- Card 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/calculator.png" class="card-img-top img-fluid" alt="Calculator">
+                        <div class="card-body">
+                            <h5 class="card-title">Calculator</h5>
+                            <p class="card-text">A basic calculator using HTML, CSS, Bootstrap, and JavaScript.</p>
+                            <a href="https://aisiahhh.github.io/SimpleCalculator/" target="_blank" class="btn btn-primary">Go to Calculator</a>
+                        </div>
+                    </div>
+                </div>
 
-			<!-- Facebook -->
-			<a href="https://www.facebook.com/aisiah.santiago" target="blank"> 
-				<i class="fa-brands fa-facebook"></i>
-			</a>
+                <!-- Card 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="./images/under.png" class="card-img-top img-fluid" alt="School Activities">
+                        <div class="card-body">
+                            <h5 class="card-title">School Activities</h5>
+                            <p class="card-text">A collection of programming activities using Java, HTML, Bootstrap, CSS, and Ruby on Rails.</p>
+                            <a href="https://drive.google.com/drive/folders/1B9AY5uiNF4ZcOjblinPtylR6j3uFFXY1?usp=sharing" target="_blank" class="btn btn-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-			<!-- Twitter -->
-			<a href="https://www.linkedin.com/in/aisiah-b-santiago-788a6530a/" target="blank"> 
-				<i class="fa-brands fa-linkedin"></i>
-			</a>
+    <section id="aboutme" class="full-page-section section-hidden">
+    <h1 style="text-align: center;">About me!</h1>
+    <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header" style="text-align: center;">Background</div>
+                        <div class="card-body">
+                            <p style="text-align: justify;">
+                               I hold a Bachelor of Science in Information Technology from Ateneo de Naga University, graduating with an Honorable Mention. I have experience in both web and app development, with a strong focus on using Flutter for building cross-platform mobile applications and responsive websites. I am proficient in Dart (Flutter), HTML, CSS, JavaScript, PHP, and have hands-on experience with back-end technologies such as Node.js, MySQL, Firebase, and MongoDB.
+                            </p>        
+                        </div>
+                    </div>
 
-			<a href="https://github.com/Aisiahhh" target="blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
-            
-		</footer>
+                    <!-- Mission Card -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header" style="text-align: center;">Mission</div>
+                        <div class="card-body">
+                            <p style="text-align: justify;">
+                                My mission is to leverage my expertise in web and mobile development to create innovative, user-centric solutions that drive business growth and efficiency. I am committed to continuous learning and staying up-to-date with cutting-edge technologies. My goal is to contribute to dynamic teams where I can apply my skills in Flutter (Dart), JavaScript, PHP, and modern front-end frameworks to make a meaningful impact.
+                            </p> 
+                        </div>
+                    </div>
 
-	</body>
+                    <!-- Services Card -->
+                    <div class="card shadow-sm mb-4">
+                        <div class="card-header" style="text-align: center;">Services I Offer</div>
+                        <div class="card-body">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">✅ Web Development</li>
+                                <li class="list-group-item">✅ Mobile App Development</li>
+                                <li class="list-group-item">✅ E-commerce Solutions</li>
+                                <li class="list-group-item">✅ Database Management</li>
+                                <li class="list-group-item">✅ Consulting Services</li>
+                                <li class="list-group-item">✅ Technical Support</li>
+                                <li class="list-group-item">✅ API integration</li>
+                                <li class="list-group-item">✅ Backend Support</li>
+                                <li class="list-group-item">✅ Restful APIs</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Floating Action Button -->
+<div class="fab-container">
+    <a href="mailto:aisiah.santiago0202@gmail.com" class="btn btn-danger fab">
+        <i class="fa-solid fa-paper-plane"></i> <!-- You can use any icon here -->
+    </a>
+</div>
+
+    <footer>
+        <a href="https://aisiahhh.github.io/fcbportfolio/" target="_blank"><i class="fa-solid fa-globe"></i></a>
+        <a href="https://www.facebook.com/aisiah.santiago" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/in/aisiah-b-santiago-788a6530a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Aisiahhh" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </footer>
+
+    <script>
+   // Function to highlight the navbar link based on the scroll position
+window.addEventListener('scroll', function() {
+    const sections = document.querySelectorAll('section'); // All sections
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link'); // All navbar links
+    
+    let currentSection = ""; // Variable to track the current section in view
+
+    // Loop through each section to check if it is in the viewport
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        if (window.scrollY >= sectionTop - 100 && window.scrollY < sectionTop + sectionHeight - 100) {
+            currentSection = section.getAttribute('id');
+        }
+    });
+
+    // Loop through all nav links and remove the underline from all
+    navLinks.forEach(link => {
+        link.classList.remove('underlined');
+        // Add underline to the link whose section is in view
+        if (link.getAttribute('href').substring(1) === currentSection) {
+            link.classList.add('underlined');
+        }
+    });
+});
+
+</script>
+
+</body>
 
 </html>

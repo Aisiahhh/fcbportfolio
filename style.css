@@ -1,89 +1,237 @@
-/*
-	Syntax for CSS:
-	selector{
-		property: value;
-	}
-*/
-
-/* Asterisk means universal. All elements will be targeted. */
-
-.card-body {
-            max-height: 200px; /* Adjust the maximum height as needed */
-            overflow: auto; /* Add scrollbars when content exceeds the max height */
-            font-weight: bold;
-        }
-
-*{
-	font-family: "Roboto", sans-serif;
-	color: white;
+ <style>
+   /* Global Styles */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal scroll */
+    font-family: 'Roboto', sans-serif; /* Ensures a uniform font */
+    background-color: #f8f9fa; /* Set the background color for the entire page */
 }
 
-.d-flex{
-	margin-right: 50px;
+.full-page-section {
+    padding: 0;
+    margin: 0;
 }
 
-h1, p{
-	font-family: "Montserrat", sans-serif;
+/* Landing Section */
+#landing {
+    height: 100vh; /* Makes this section cover the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f8f9fa; /* Optional, change background color if needed */
 }
 
-/* use # for ID selector */
-#profile{
-	height: 350px;
-	width: 350px;
-	object-fit: cover;
-	border-radius: 50%;
+#landing h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
 }
 
-body{
-	background-color: #330033;
-	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+#landing h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #555;
 }
 
-footer {
-    background-color: black;
+#landing p {
+    font-size: 1.2rem;
+    color: #777;
+}
+
+#profile {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin-top: 20px;
+    border: 5px solid #fff;
+}
+
+/* Navbar Styles */
+/* Navbar fixed at the top */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Make the navbar background slightly transparent */
+.navbar.bg-light {
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value to change transparency */
+}
+
+.navbar .navbar-brand h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.navbar-nav {
     display: flex;
     justify-content: center;
-    padding: 10px;
+    gap: 20px;
+}
+
+/* Floating Action Button (FAB) */
+.fab-container {
     position: fixed;
-	width: 100%;
-	bottom: 0;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
-#hireButton.btn-info:hover{
-	color: blue;
+.fab {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #ff4081; /* You can change the color */
+    color: white;
+    font-size: 24px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
 
-.container {
-    flex: 1; /* This makes the container take up the remaining space */
+.fab:hover {
+    background-color: #e0356f; /* Change on hover */
 }
 
 
-
-.fa-brands, .fa-solid, .fa-regular{
-	font-size: 30px;
-	color: white;
-
-	/* top, right, bottom, left	*/
-	margin: 0 10px 0 10px;
+.navbar .nav-link {
+    color: #fff;
+    font-size: 1rem;
+    margin-right: 10px;
 }
 
-.fa-brands:hover,.fa-regular:hover, .fa-solid:hover{
-	color: blue;
+/* Define the underline effect */
+.nav-link.underlined {
+    text-decoration: underline;
+    font-weight: bold; /* Optional: makes the underlined item stand out more */
 }
 
-#landing{
-	height: 80vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+/* Optional: smooth transition for text decoration */
+.nav-link {
+    transition: text-decoration 0.3s ease;
 }
 
-.card-title{
-    font-weight: bold;
-  
+.navbar .nav-link:hover {
+    color: #007bff; /* Change hover color */
 }
 
-.card-title, .card-text {
-    color: black;
+/* Button Styling */
+#hireButton a {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    padding: 10px 30px;
+    border-radius: 25px;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
+
+#hireButton a:hover {
+    background-color: #218838;
+}
+
+/* Footer Styles */
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+/* Card Styles */
+.card {
+    margin-bottom: 30px;
+}
+
+.card img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #landing h1 {
+        font-size: 2.5rem;
+    }
+
+    #landing h2 {
+        font-size: 2rem;
+    }
+
+    #landing p {
+        font-size: 1rem;
+    }
+
+    #profile {
+        width: 200px;
+        height: 200px;
+    }
+
+    .card img {
+        max-height: 250px;
+    }
+
+    .btn-info {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+
+    /* Adjust navbar on small screens */
+    .navbar .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    #landing h1 {
+        font-size: 2rem;
+    }
+
+    #landing h2 {
+        font-size: 1.8rem;
+    }
+
+    #landing p {
+        font-size: 0.9rem;
+    }
+
+    #profile {
+        width: 180px;
+        height: 180px;
+    }
+
+    .navbar .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+    </style>
