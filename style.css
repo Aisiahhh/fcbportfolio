@@ -18,7 +18,7 @@ body {
 
 /* Smooth scroll behavior */
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth ;
 }
 
 /* Navbar Styles */
@@ -85,13 +85,12 @@ html {
     height: 200px;
     object-fit: cover;
     border: 5px solid var(--text-color);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 45px rgba(0, 0, 0, 0.3);
 }
 
 /* Card Styles */
 .card {
     background: var(--card-bg);
-    border: none;
     border-radius: 15px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -99,6 +98,7 @@ html {
 }
 
 .card:hover {
+    border: 1px solid var(--text-color);
     transform: translateY(-10px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
