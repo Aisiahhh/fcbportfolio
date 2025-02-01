@@ -17,11 +17,12 @@
     <!-- AOS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
+<div class="custom-cursor"></div>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html">
@@ -40,10 +41,14 @@
 
     <section id="landing" data-aos="fade-up">
         <div class="container-fluid">
+			<div class="container-fluid" data-aos="zoom-in" data-aos-duration="2000">
             <h1>Full Stack Web Developer</h1>
             <h2>Aisiah Santiago</h2>
             <p>Hi! I am looking for a Mobile and Web Developer position</p>
-            <img src="./images/toga.jpg" id="profile" class="img-fluid" alt="Profile Picture">
+			</div>
+			<div data-aos="flip-left" data-aos-duration="2000">
+			  <img src="./images/toga.jpg" id="profile" class="img-fluid" alt="Profile Picture">
+			</div>
         </div>
     </section>
 
@@ -53,7 +58,7 @@
             <p class="text-center mb-5" data-aos="fade-up">These are my works using different technologies.</p>
             <div class="row">
                 <!-- Card 1 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="2000">
                     <div class="card">
                         <img src="./images/snakegame.png" class="card-img-top img-fluid" alt="Snake Game">
                         <div class="card-body">
@@ -65,7 +70,7 @@
                 </div>
 
                 <!-- Card 2 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
                     <div class="card">
                         <img src="./images/e-alert.png" class="card-img-top img-fluid" alt="E-Alert">
                         <div class="card-body">
@@ -77,7 +82,7 @@
                 </div>
 
                 <!-- Card 3 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
                     <div class="card">
                         <img src="./images/mobile.jpg" class="card-img-top img-fluid" alt="E-Alert Mobile">
                         <div class="card-body">
@@ -91,7 +96,7 @@
 
             <div class="row mt-4">
                 <!-- Card 4 -->
-                <div class="col-md-4 mb-4"data-aos="fade-up">
+                <div class="col-md-4 mb-4"data-aos="fade-right" data-aos-duration="2000">
                     <div class="card">
                         <img src="./images/3gx.png" class="card-img-top img-fluid" alt="Internship Project">
                         <div class="card-body">
@@ -103,7 +108,7 @@
                 </div>
 
                 <!-- Card 5 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
                     <div class="card">
                         <img src="./images/calculator.png" class="card-img-top img-fluid" alt="Calculator">
                         <div class="card-body">
@@ -115,7 +120,7 @@
                 </div>
 
                 <!-- Card 6 -->
-                <div class="col-md-4 mb-4" data-aos="fade-up">
+                <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
                     <div class="card">
                         <img src="./images/under.png" class="card-img-top img-fluid" alt="School Activities">
                         <div class="card-body">
@@ -184,6 +189,21 @@
 
     <script>
         AOS.init();
-    </script>
+		const cursor = document.querySelector('.custom-cursor');
+		document.addEventListener('mousemove', (e) => {
+			cursor.style.left = e.clientX + 'px';
+			cursor.style.top = e.clientY + 'px';
+		});
+
+		// Hover effects
+		document.querySelectorAll('a, button, .card').forEach(element => {
+			element.addEventListener('mouseenter', () => {
+				cursor.style.transform = 'scale(2)';
+			});
+			element.addEventListener('mouseleave', () => {
+				cursor.style.transform = 'scale(1)';
+			});
+		});
+	</script>
 </body>
 </html>
