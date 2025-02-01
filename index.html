@@ -1,209 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aisiah | Web Developer Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aisiah | Web Developer Portfolio</title>
 
-    <!-- Font Awesome for icons -->
-    <script src="https://kit.fontawesome.com/f31c9f7a17.js" crossorigin="anonymous"></script>
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/f31c9f7a17.js" crossorigin="anonymous"></script>
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- AOS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./style.css">
+  <!-- AOS (Animate On Scroll) -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  
+  <!-- Animate.css (optional) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-<div class="custom-cursor"></div>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html">
-                <h2>Home</h2>
-            </a>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <div class="navbar-nav mx-auto">
-                    <a class="nav-link" href="#landing">Home</a>
-                    <a class="nav-link" href="#applications">Projects</a>
-                    <a class="nav-link" href="#aboutme">About Me</a>
-                    <a class="nav-link" href="mailto:aisiah.santiago0202@gmail.com">Hire me!</a>
-                </div>
-            </div>
+  <div class="custom-cursor"></div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <h2>Home</h2>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav mx-auto">
+          <a class="nav-link" href="#landing">Home</a>
+          <a class="nav-link" href="#applications">Projects</a>
+          <a class="nav-link" href="#aboutme">About Me</a>
+          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="mailto:aisiah.santiago0202@gmail.com">Hire me!</a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
-    <section id="landing" data-aos="fade-up">
-        <div class="container-fluid">
-			<div class="container-fluid" data-aos="zoom-in" data-aos-duration="2000">
-            <h1>Full Stack Web Developer</h1>
-            <h2>Aisiah Santiago</h2>
-            <p>Hi! I am looking for a Mobile and Web Developer position</p>
+  <section id="landing" data-aos="fade-up">
+    <div class="container-fluid">
+      <div class="container-fluid" data-aos="zoom-in" data-aos-duration="2000">
+        <h1>Full Stack Web Developer</h1>
+        <h2>Aisiah Santiago</h2>
+        <p>Hi! I am looking for a Mobile and Web Developer position</p>
+      </div>
+      <div data-aos="flip-left" data-aos-duration="2000">
+        <img src="./images/toga.jpg" id="profile" class="img-fluid" alt="Profile Picture">
+      </div>
+    </div>
+  </section>
+
+  <section id="applications" data-aos="fade-up" style="padding-top: 50px;">
+    <div class="container">
+      <h1 class="text-center mb-4" data-aos="fade-up">My Projects</h1>
+      <p class="text-center mb-5" data-aos="fade-up">These are my works using different technologies.</p>
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="2000">
+          <div class="card">
+            <img src="./images/snakegame.png" class="card-img-top img-fluid" alt="Snake Game">
+            <div class="card-body">
+              <h5 class="card-title">Snake Game</h5>
+              <p class="card-text">A simple snake game using JavaScript, HTML, CSS, Bootstrap, and PHP.</p>
+              <a href="https://aisiahhh.github.io/Snake_Game/" target="_blank" class="btn btn-primary">Go to Game</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
+          <div class="card">
+            <img src="./images/e-alert.png" class="card-img-top img-fluid" alt="E-Alert">
+            <div class="card-body">
+              <h5 class="card-title">E-Alert</h5>
+              <p class="card-text">Capstone Project. Built with Dart, APIs, Flutter, and Firebase.</p>
+              <a href="https://e-alert-7510c.web.app/" target="_blank" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card">
+            <img src="./images/mobile.jpg" class="card-img-top img-fluid" alt="E-Alert Mobile">
+            <div class="card-body">
+              <h5 class="card-title">E-Alert Mobile</h5>
+              <p class="card-text">A mobile app for E-Alert, using APIs, Kotlin, and Firebase.</p>
+              <a href="https://drive.google.com/drive/folders/1Byc3PRu0NoXv6yewPSbxWJ1JbiUWCB_F" target="_blank" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <!-- Card 4 -->
+        <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="2000">
+          <div class="card">
+            <img src="./images/3gx.png" class="card-img-top img-fluid" alt="Internship Project">
+            <div class="card-body">
+              <h5 class="card-title">Internship Project</h5>
+              <p class="card-text">A POS mobile application using Dart, Flutter, PHP, and MySQL.</p>
+              <a href="#" target="_blank" class="btn btn-primary">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5 -->
+        <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
+          <div class="card">
+            <img src="./images/calculator.png" class="card-img-top img-fluid" alt="Calculator">
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">A basic calculator using HTML, CSS, Bootstrap, and JavaScript.</p>
+              <a href="https://aisiahhh.github.io/SimpleCalculator/" target="_blank" class="btn btn-primary">Go to Calculator</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6 -->
+        <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
+          <div class="card">
+            <img src="./images/under.png" class="card-img-top img-fluid" alt="School Activities">
+            <div class="card-body">
+              <h5 class="card-title">School Activities</h5>
+              <p class="card-text">A collection of programming activities using Java, HTML, Bootstrap, CSS, and Ruby on Rails.</p>
+              <a href="https://drive.google.com/drive/folders/1B9AY5uiNF4ZcOjblinPtylR6j3uFFXY1?usp=sharing" target="_blank" class="btn btn-primary">View</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="aboutme" data-aos="fade-up">
+    <h1 class="text-center">About me!</h1>
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow-sm mb-4" data-aos="fade-up">
+            <div class="card-header text-center">Background</div>
+            <div class="card-body">
+              <p style="text-align: justify;">
+                I hold a Bachelor of Science in Information Technology from Ateneo de Naga University, graduating with an Honorable Mention. I have experience in both web and app development, with a strong focus on using Flutter for building cross-platform mobile applications and responsive websites. I am proficient in Dart (Flutter), HTML, CSS, JavaScript, PHP, and have hands-on experience with back-end technologies such as Node.js, MySQL, Firebase, and MongoDB.
+              </p>
+            </div>
+          </div>
+          <!-- Mission Card -->
+          <div class="card shadow-sm mb-4" data-aos="fade-up">
+            <div class="card-header" style="text-align: center;">Mission</div>
+            <div class="card-body">
+              <p style="text-align: justify;">
+                My mission is to leverage my expertise in web and mobile development to create innovative, user-centric solutions that drive business growth and efficiency. I am committed to continuous learning and staying up-to-date with cutting-edge technologies. My goal is to contribute to dynamic teams where I can apply my skills in Flutter (Dart), JavaScript, PHP, and modern front-end frameworks to make a meaningful impact.
+              </p> 
+            </div>
+          </div>
+
+          <!-- Services Card -->
+          <div class="card shadow-sm mb-4" data-aos="fade-up">
+            <div class="card-header" style="text-align: center;">Services I Offer</div>
+            <div class="card-body" style="background-color: transparent;">
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Web Development</li>
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Mobile App Development</li>
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ E-commerce Solutions</li>
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Database Management</li>
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Consulting Services</li>
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Technical Support</li>
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ API integration</li>
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Backend Support</li>
+                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Restful APIs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+	<!-- Update the contact section in index.html -->
+	<section id="contact" data-aos="fade-up">
+	  <div class="container py-5">
+		<h1 class="text-center mb-5">Get in Touch</h1>
+		<div class="row justify-content-center g-4">
+		  <!-- Contact Card 1 -->
+		  <div class="col-md-6 col-lg-4" data-aos="zoom-in">
+			<div class="contact-card">
+			  <div class="card-icon">
+				<i class="fas fa-map-marker-alt"></i>
+			  </div>
+			  <h3>Location</h3>
+			  <p>Naga City, Camarines Sur</p>
 			</div>
-			<div data-aos="flip-left" data-aos-duration="2000">
-			  <img src="./images/toga.jpg" id="profile" class="img-fluid" alt="Profile Picture">
+		  </div>
+		  
+		  <!-- Contact Card 2 -->
+		  <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+			<div class="contact-card">
+			  <div class="card-icon">
+				<i class="fas fa-envelope"></i>
+			  </div>
+			  <h3>Email</h3>
+			  <a href="mailto:aisiah.santiago0202@gmail.com">aisiah.santiago0202@gmail.com</a>
 			</div>
-        </div>
-    </section>
+		  </div>
 
-    <section id="applications" data-aos="fade-up" style="padding-top: 50px;">
-        <div class="container">
-            <h1 class="text-center mb-4" data-aos="fade-up">My Projects</h1>
-            <p class="text-center mb-5" data-aos="fade-up">These are my works using different technologies.</p>
-            <div class="row">
-                <!-- Card 1 -->
-                <div class="col-md-4 mb-4" data-aos="fade-right" data-aos-duration="2000">
-                    <div class="card">
-                        <img src="./images/snakegame.png" class="card-img-top img-fluid" alt="Snake Game">
-                        <div class="card-body">
-                            <h5 class="card-title">Snake Game</h5>
-                            <p class="card-text">A simple snake game using JavaScript, HTML, CSS, Bootstrap, and PHP.</p>
-                            <a href="https://aisiahhh.github.io/Snake_Game/" target="_blank" class="btn btn-primary">Go to Game</a>
-                        </div>
-                    </div>
-                </div>
+		  <!-- Contact Card 3 -->
+		  <div class="col-md-6 col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+			<div class="contact-card">
+			  <div class="card-icon">
+				<i class="fas fa-phone"></i>
+			  </div>
+			  <h3>Phone</h3>
+			  <a href="tel:+639123456789">+63 950 891 5309</a>
+			</div>
+		  </div>
 
-                <!-- Card 2 -->
-                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
-                    <div class="card">
-                        <img src="./images/e-alert.png" class="card-img-top img-fluid" alt="E-Alert">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Alert</h5>
-                            <p class="card-text">Capstone Project. Built with Dart, APIs, Flutter, and Firebase.</p>
-                            <a href="https://e-alert-7510c.web.app/" target="_blank" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
+		  <!-- Social Links Card -->
+		  <div class="col-md-8" data-aos="zoom-in-up" data-aos-delay="300">
+			<div class="social-card">
+			  <h3 class="text-center mb-4">Connect With Me</h3>
+			  <div class="social-links d-flex justify-content-center flex-wrap">
+				<a href="https://linkedin.com/in/aisiah" target="_blank" class="social-icon">
+				  <i class="fab fa-linkedin"></i>
+				</a>
+				<a href="https://github.com/Aisiahhh" target="_blank" class="social-icon">
+				  <i class="fab fa-github"></i>
+				</a>
+				<a href="https://facebook.com/aisiah.santiago" target="_blank" class="social-icon">
+				  <i class="fab fa-facebook"></i>
+				</a>
+				<a href="https://aisiahhh.github.io" target="_blank" class="social-icon">
+				  <i class="fas fa-globe"></i>
+				</a>
+			  </div>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</section>
+  <script>
+    AOS.init();
+    const cursor = document.querySelector('.custom-cursor');
+    document.addEventListener('mousemove', (e) => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+    });
 
-                <!-- Card 3 -->
-                <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="card">
-                        <img src="./images/mobile.jpg" class="card-img-top img-fluid" alt="E-Alert Mobile">
-                        <div class="card-body">
-                            <h5 class="card-title">E-Alert Mobile</h5>
-                            <p class="card-text">A mobile app for E-Alert, using APIs, Kotlin, and Firebase.</p>
-                            <a href="https://drive.google.com/drive/folders/1Byc3PRu0NoXv6yewPSbxWJ1JbiUWCB_F" target="_blank" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mt-4">
-                <!-- Card 4 -->
-                <div class="col-md-4 mb-4"data-aos="fade-right" data-aos-duration="2000">
-                    <div class="card">
-                        <img src="./images/3gx.png" class="card-img-top img-fluid" alt="Internship Project">
-                        <div class="card-body">
-                            <h5 class="card-title">Internship Project</h5>
-                            <p class="card-text">A POS mobile application using Dart, Flutter, PHP, and MySQL.</p>
-                            <a href="#" target="_blank" class="btn btn-primary">View Project</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col-md-4 mb-4" data-aos="flip-left" data-aos-duration="2000">
-                    <div class="card">
-                        <img src="./images/calculator.png" class="card-img-top img-fluid" alt="Calculator">
-                        <div class="card-body">
-                            <h5 class="card-title">Calculator</h5>
-                            <p class="card-text">A basic calculator using HTML, CSS, Bootstrap, and JavaScript.</p>
-                            <a href="https://aisiahhh.github.io/SimpleCalculator/" target="_blank" class="btn btn-primary">Go to Calculator</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col-md-4 mb-4" data-aos="fade-left" data-aos-duration="2000">
-                    <div class="card">
-                        <img src="./images/under.png" class="card-img-top img-fluid" alt="School Activities">
-                        <div class="card-body">
-                            <h5 class="card-title">School Activities</h5>
-                            <p class="card-text">A collection of programming activities using Java, HTML, Bootstrap, CSS, and Ruby on Rails.</p>
-                            <a href="https://drive.google.com/drive/folders/1B9AY5uiNF4ZcOjblinPtylR6j3uFFXY1?usp=sharing" target="_blank" class="btn btn-primary">View</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="aboutme" data-aos="fade-up">
-        <h1 class="text-center">About me!</h1>
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="card shadow-sm mb-4" data-aos="fade-up">
-                        <div class="card-header text-center">Background</div>
-                        <div class="card-body">
-                            <p style="text-align: justify;">
-                                I hold a Bachelor of Science in Information Technology from Ateneo de Naga University, graduating with an Honorable Mention. I have experience in both web and app development, with a strong focus on using Flutter for building cross-platform mobile applications and responsive websites. I am proficient in Dart (Flutter), HTML, CSS, JavaScript, PHP, and have hands-on experience with back-end technologies such as Node.js, MySQL, Firebase, and MongoDB.
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Mission Card -->
-                    <div class="card shadow-sm mb-4"data-aos="fade-up">
-                        <div class="card-header" style="text-align: center;">Mission</div>
-                        <div class="card-body">
-                            <p style="text-align: justify;">
-                                My mission is to leverage my expertise in web and mobile development to create innovative, user-centric solutions that drive business growth and efficiency. I am committed to continuous learning and staying up-to-date with cutting-edge technologies. My goal is to contribute to dynamic teams where I can apply my skills in Flutter (Dart), JavaScript, PHP, and modern front-end frameworks to make a meaningful impact.
-                            </p> 
-                        </div>
-                    </div>
-
-                    <!-- Services Card -->
-                    <div class="card shadow-sm mb-4" data-aos="fade-up">
-                        <div class="card-header" style="text-align: center;">Services I Offer</div>
-                        <div class="card-body" style="background-color: transparent;">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Web Development</li>
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Mobile App Development</li>
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ E-commerce Solutions</li>
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Database Management</li>
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Consulting Services</li>
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Technical Support</li>
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ API integration</li>
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Backend Support</li>
-                                <li class="list-group-item" style="background-color: transparent; color: white;">✅ Restful APIs</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <a href="https://aisiahhh.github.io/fcbportfolio/" target="_blank"><i class="fa-solid fa-globe"></i></a>
-        <a href="https://www.facebook.com/aisiah.santiago" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.linkedin.com/in/aisiah-b-santiago-788a6530a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="https://github.com/Aisiahhh" target="_blank"><i class="fa-brands fa-github"></i></a>
-    </footer>
-
-    <script>
-        AOS.init();
-		const cursor = document.querySelector('.custom-cursor');
-		document.addEventListener('mousemove', (e) => {
-			cursor.style.left = e.clientX + 'px';
-			cursor.style.top = e.clientY + 'px';
-		});
-
-		// Hover effects
-		document.querySelectorAll('a, button, .card').forEach(element => {
-			element.addEventListener('mouseenter', () => {
-				cursor.style.transform = 'scale(2)';
-			});
-			element.addEventListener('mouseleave', () => {
-				cursor.style.transform = 'scale(1)';
-			});
-		});
-	</script>
+    // Hover effects
+    document.querySelectorAll('a, button, .card').forEach(element => {
+      element.addEventListener('mouseenter', () => {
+        cursor.style.transform = 'scale(2)';
+      });
+      element.addEventListener('mouseleave', () => {
+        cursor.style.transform = 'scale(1)';
+      });
+    });
+  </script>
 </body>
 </html>
