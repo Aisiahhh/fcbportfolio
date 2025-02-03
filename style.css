@@ -1,7 +1,7 @@
 /* Modern Color Scheme */
 :root {
     --primary-color: blue; /* Purple accent */
-    --secondary-color: #87CEEB; /* Pink accent */
+    --secondary-color: #cdb4db; /* Pink accent */
     --background-color: #1A1A1A; /* Dark background */
     --text-color: #FFFFFF; /* White text */
     --card-bg: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
